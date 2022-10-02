@@ -1,1 +1,1 @@
-link to view [click here](https://v1tyab0ndarenko.github.io/html_css_curse/)
+link to view [click here](https://v1tyab0ndarenko.github.io/Homework/)
