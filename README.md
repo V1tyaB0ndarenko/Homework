@@ -1,0 +1,1 @@
+link to view [click here](https://v1tyab0ndarenko.github.io/html_css_curse/)
