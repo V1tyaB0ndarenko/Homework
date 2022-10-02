@@ -1,0 +1,44 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.h1_main{
+    text-align: center;
+    background-color: #020202;
+    color: #fff;
+}
+.info{  
+    text-align: center;
+}
+.info h1{
+    width: 81%;
+}
+.info_details{
+    color: #C9A66B;
+}
+.info_body{
+    padding: 15px 0;
+    padding-left: 30%;
+}
+.info_body p{
+    margin: 15px 0;
+}
+.info_body h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.my_contact{
+    font-size: 18px;
+    margin: 0 15px;
+    display: inline-block;
+}
