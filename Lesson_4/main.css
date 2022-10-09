@@ -22,6 +22,9 @@ p{
 li{
     margin: 0 0 0 25px;
 }
+a{
+    display: block;
+}
 iframe{
     margin-top: 40px;
     display: block;
@@ -34,4 +37,7 @@ iframe{
 }
 .example{
     margin-top: 16px;
+}
+.my_cv{
+    margin-top: 40px;
 }
