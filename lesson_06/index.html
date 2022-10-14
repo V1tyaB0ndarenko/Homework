@@ -10,7 +10,7 @@
 <body>
  <main>
 
-    <form action="#" method="get" enctype="multipart/form-data" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+    <form action="#" method="post" enctype="multipart/form-data" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
         <label for="name">Повне ім'я</label>
         <input type="text" id="name" name="name" required>
         <br>
