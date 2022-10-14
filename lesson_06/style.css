@@ -1,0 +1,17 @@
+span{
+    font-size: 12px;
+}
+label{
+    width: 200px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+form{
+    background-color: #EFEFEF;
+    max-width: 500px;
+    padding: 15px 0;
+}
+
+button{
+  margin-left: 50px;
+}

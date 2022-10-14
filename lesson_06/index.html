@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ <main>
+
+    <form action="#" method="get" enctype="multipart/form-data">
+        <label for="name">Повне ім'я</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <br>
+        <label for="password">Пароль</label>
+        <input type="password" id="password" required>
+        <br>
+        <label for="password-again">Пароль ще раз</label>
+        <input type="password" id="password-again" required>
+        <br>
+        <label for="sex">Стать</label>
+        <span>чоловіча</span><input  type="radio" name="sex"value ="male" checked>
+        <span>жіноча</span><input type ="radio" name="sex" value="female">
+        <br>
+        <label for="age">Вік</label>
+        <input type="text" id="age" size="1">
+        <br>
+        <label for="mycurse">Виберіть курс</label>
+        <select name="curses" id="mycurse">
+            <option disabled selected>-=Виберіть курс=-</option>
+            <option value="front-end"> Front-End</option>
+            <option value="project-managment">Project Management</option>
+            <option value="qa-manua"> QA Manua</option>
+        </select>
+       
+        <br>
+        <label for="myadress">Повна Адреса</label>
+        <textarea name="adress" id="myadress" cols="20" rows="4" placeholder="Країна,регіон,місто/селище,вулиця"></textarea>
+        <br>
+        <input type="checkbox" id="accepted">
+        <label for="accepted"> <span>Я погоджуюсь з обробкою персональных данных</span></label>
+        <br>
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареєструватися</button>
+      
+    </form>
+
+</main>
+    
+</body>
+</html>
