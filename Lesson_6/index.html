@@ -10,7 +10,7 @@
 <body>
  <main>
 
-    <form action="#" method="post" enctype="multipart/form-data" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+    <form action="#" method="post"  id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
         <label for="name">Повне ім'я</label>
         <input type="text" id="name" name="name" required>
         <br>
@@ -18,7 +18,7 @@
         <input type="email" id="email" name="email" required>
         <br>
         <label for="password">Пароль</label>
-        <input type="password" id="password" required>
+        <input type="password" id="password" required name="password">
         <br>
         <label for="password-again">Пароль ще раз</label>
         <input type="password" id="password-again" required>
