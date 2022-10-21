@@ -30,9 +30,8 @@ label{
     
 }
 small{
-    display: inline-block;
+    
     font-size: 11px;
-    margin: 0 auto;
     margin-left: 3px;
     vertical-align: middle;
 }
