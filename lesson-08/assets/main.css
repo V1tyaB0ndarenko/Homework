@@ -13,6 +13,10 @@ ul,li{
 a{
     text-decoration: none;
 }
+img {
+    vertical-align: top;
+    max-width: 100%;
+  }
 
 .container{
     width: 90%;
@@ -21,8 +25,47 @@ a{
     
 }
 
+h2{
+    /* font-weight: 700;
+    font-size: 36px;
+    line-height: 44px; */
 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+  
+    text-align: center;
+    margin: 0 330px;
+    margin-bottom: 50px;
+    
+}
 
+h3{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26.82px;
+    margin-bottom: 16px;
+}
+::placeholder{
+    color: #BCD0E5;
+    line-height: 20px;
+    text-align: left;
+    font-size: 16px;
+   
+}
+input{
+    width: 280px;
+    padding: 15px 0;
+    padding-left: 15px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 20px;
+}
+input:focus{
+    border: 1px solid #FF9900!important;
+    
+}
 /* выше общие стили!!! */
 
 
@@ -112,6 +155,7 @@ a{
 
 .first_screen{
     margin-top: 100px;
+
 }
 .productly__main{
     display: flex;
@@ -140,4 +184,69 @@ a{
     max-width: 500px;
     margin-right: 56px;
     margin-bottom: 11px;
+}
+
+/* вторая секция */
+
+.benefits{
+    background: url(img/bg.png) center bottom/cover no-repeat;
+    margin-top: 100px;
+}
+.benefits__title{
+    text-align: center;
+}
+
+
+.benefits__wrapper{
+    display: flex;
+    margin-bottom: 70px;
+ 
+}
+.benefits__icon{
+    margin-bottom: 30px;
+}
+.benefits__text{
+    margin-bottom: 0px;
+    width: 270px;
+    height: 54px;
+    font-size: 16px;
+    margin-right: 40px;
+}
+.center{
+    margin-bottom: 74px;
+}
+.button_wrap{
+    text-align: center;
+}
+/* footer */
+
+.footer__wrap{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer__item h3{
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.footer{
+    border-top:1px solid rgba(188, 208, 229, 0.496913);
+    padding: 70px 0;
+}
+.footer__list{
+    line-height: 36px;
+    
+}
+.footer__list a{
+    color: #544837;
+    font-weight: 500;
+
+}
+.footer__title{
+    max-width: 280px;
+}
+.form-btn{
+    display: block;
+    margin-top: 0;
 }
