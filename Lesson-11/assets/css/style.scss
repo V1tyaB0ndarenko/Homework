@@ -1,0 +1,246 @@
+$orange-color: #FFCC00;
+$text-color: #666666;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+  height:100%;
+  width: 100%;
+  font-family: 'Roboto';
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  object-fit: cover;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 66px;
+    color: #FFCC00;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+h3{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header__title{
+    text-align: center;
+    span{
+        &::after{
+            content: "";
+            display: inline-block;
+            height: 1px;
+            width: 210px;
+            background-color: $orange-color;
+            margin-bottom: 9px;
+        }
+        &::before{
+            content: "";
+            display: inline-block;
+            height: 1px;
+            width: 210px;
+            background-color: $orange-color;
+            margin-bottom: 9px;
+        }
+    }
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+  
+}
+.photo_wrap{
+    width: 430px;
+    height: 430px;
+    padding: 15px;
+    margin-top: 50px;
+    position: relative;
+    &::before, &::after{
+        content: "";
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        border-top: 1px solid $orange-color;
+    }
+    &::before{
+        left: 0;
+        border-left: 1px solid $orange-color;
+    }
+    &::after{
+        right: 0;
+        border-right: 1px solid $orange-color;
+    }
+}
+
+
+.wrapper{
+    border: 1px solid $orange-color;
+ 
+    &::before, &::after{
+        content: "";
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        border-bottom: 1px solid $orange-color;
+    }
+    &::before{
+        left: 0;
+        border-left: 1px solid $orange-color;
+    }
+    &::after{
+        right: 0;
+        border-right: 1px solid $orange-color;
+    }
+}
+.author_wrap{
+    position: relative;
+}
+.author_name{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: $text-color;
+ 
+   
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 1px;
+        background-color: $orange-color;
+        bottom: -30px;
+        left: 164px;
+    
+    }
+}
+main{
+    padding: 40px 0;
+}
+.position{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "Raleway";
+    display: block;
+    margin-top: 60px;
+    color: $text-color;
+    margin-bottom: 30px;
+}
+
+.author_social{
+    display: flex;
+    justify-content: center
+
+}
+.author_link{
+    color: #ccc;
+    border: 3px solid #ccc;
+    margin: 9px 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: bottom;
+    margin: 0px 3px;
+    &:hover{
+        border-color: $orange-color;
+        color: $orange-color;
+    }
+    span{
+        display: block;
+        position: absolute;
+        left: 4px;
+    }
+ 
+}
+.icon-face{
+    width: 16px;
+}
+.author_text{
+    max-width: 430px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Raleway";
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.line-center{
+    text-align: center;
+}
+.link-center{
+    text-align: center;
+}
+.line {
+    display: inline-block;
+     width: 50px;
+     height: 4px;
+     background: linear-gradient(to right, #FFCC00 0%, #FFCC00 15%, transparent 15%, transparent 25%, #FFCC00 25%, #FFCC00 75%, transparent 75%, transparent 85%, #FFCC00 85%, #FFCC00 100%);
+    margin-bottom: 25px;
+  
+ }
+ .profile{  
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: $text-color;
+    text-transform: uppercase;
+    border: 2px solid $orange-color;
+    padding: 5px 10px;
+    &:hover{
+        color: $orange-color;
+    }
+   
+ }
+ .content_side{
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 560px;
+        display: block;
+        background-color: $orange-color;
+        top: 0;
+        left: -80px
+    }
+    
+ }
