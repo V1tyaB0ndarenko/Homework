@@ -9,6 +9,8 @@ body{
     font-weight: 400;
     font-size: 28px;
     line-height: 48px; 
+    background: #fff url(../img/bg-picture.png) right 231px top 137px no-repeat;
+    background-attachment: fixed;
 }
 ul,
 li{
@@ -16,6 +18,10 @@ li{
     display: flex;
     
     
+}
+main{
+    /* display: flex;
+    flex-direction: column; */
 }
 img {
     vertical-align: top;
@@ -46,6 +52,18 @@ h2{
     display: inline-block;
     margin-bottom: 40px;
     text-transform: uppercase;
+    position: relative;
+    right: 100px;
+}
+h2::before{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 8px;
+    background: #000000;
+    position: relative;
+    bottom: 59px;
+    left: 101px;
 }
 .und{
     text-decoration: underline;
@@ -56,6 +74,7 @@ section{
 header{
     width: 100%;
     margin-bottom: 100px;
+   
 }
 .header-wrap{
     display: flex;
@@ -67,6 +86,34 @@ header a{
     text-decoration: none;
 
 }
+
+/* aside */
+aside{
+    display: inline;
+}
+.flex_ul{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+   
+}
+.aside_text{
+    font-size: 36px;
+    line-height: 48px;
+    font-family: Francois One;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    display: inline-block;
+    
+    text-transform: uppercase;
+}
+.aside_item{
+    max-width: 385px;
+    border-bottom: 1px solid #BDBDBD;
+    padding-bottom: 8px;
+    margin-bottom: 80px;
+}
+/*  */
 i{
     font-family: "PT sans";
     font-size: 26px;
@@ -103,9 +150,21 @@ i{
     vertical-align: text-top;
     position: relative;
     top: -10px;
-    left: 5px;
+    left: -96px;
 }
 
 .fund_mar{
     margin-bottom: 40px;
+}
+
+
+.wrapper{
+ float: right;
+ position: relative;
+ bottom: 542px;
+ right: 390px;
+    
+}
+.content{
+    max-width: 785px;
 }
