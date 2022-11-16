@@ -1,0 +1,274 @@
+$blue-color: #007BFF;
+$grey-color: #969696;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #545454;
+   
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 570px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+
+  input[type=text],
+  input[type=password],
+  input[type=date],
+  input[type=datetime],
+  input[type=number],
+  input[type=url],
+  input[type=tel],
+  input[type=email],
+  input[type=file]{
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    outline:0;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+  input:focus{
+    border: 1px solid $blue-color;
+}
+select{
+    width: 245px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    outline:0;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    display: block;
+    color:  $grey-color;
+    font-size: 15px;
+}
+  
+.links{
+    color: $blue-color;
+}
+
+
+
+ h2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+    margin-bottom: 20px;
+
+ }
+
+
+ form{
+    background-color: #fff;
+    display: inline-flex;
+    /* justify-content: space-around; */
+    gap: 40px;
+ }
+
+ .label{
+    display: inline-block;
+    margin-bottom: 7px;
+ }
+ .flex_wrap{
+    display: flex;
+    gap: 12px;
+ }
+#form-email{
+    width: 100%;
+
+    margin-bottom: 7px;
+}
+.subtitle{
+    font-size: 13px;
+    line-height: 18px;
+    color: #969696;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.box{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    padding-left: 20px;
+
+}
+
+.check-style{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+
+    
+}
+.box:checked + .check-style::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 5px solid $blue-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+ 
+
+}
+
+.margin_male{
+    margin-left: 30px;
+    margin-right: 11px;
+}
+.margin_female{
+    margin-left: 30px;
+}
+.genders{
+    margin-bottom: 20px;
+}
+
+.btn{
+    background: $blue-color;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    display: block;
+    width: 150px;
+    height: 38px;
+    border: 1px solid #E4E4E4;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 500;
+    &:hover{
+        background-color: darken($blue-color,10%);
+    }
+    &.btn-large{
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+
+    a{
+        color: #fff;
+    }
+
+}
+.links_text{
+    text-align: center;
+    color: $grey-color;
+    font-size: 13px;
+    max-width: 388px;
+    margin-left: 81px;
+    line-height: 18px;
+    margin-bottom: 20px;
+ 
+} 
+
+.account_link{
+    margin-right: 19px;
+    text-align: center;
+    &::before{
+        content: "";
+        width: 100%;
+
+        height: 1px;
+        background-color: #E4E4E4;
+        display: inline-block;
+        margin-bottom: 20px;
+
+    }
+}
+.link1{
+    color: #545454;
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 22px;
+}
+.form_wrap{
+    
+}
+.user_box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.user_photo{
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+}
+
+
+
+.input_container{
+    margin-left: 20px;
+    padding-top: 15px;
+}
+  
+  input[type=file]::file-selector-button {
+  display: none;
+  
+  }
+  input[type=file]{
+    width: 138px;
+    height: 38px;
+    margin-bottom: 9px;
+  }
+  .fa-camera{
+    position: relative;
+    right: 26px;
+    bottom: -10px;
+    color: $grey-color;
+  }
+
+  .delete{
+    height: 38px;
+    border-radius: 6px;
+    border: 1px solid #E4E4E4;
+    padding: 10px;
+    color: $grey-color;
+    vertical-align: middle;
+    position: relative;
+    bottom: -8px;
+  }
+.span_details{
+    color: $grey-color;
+    font-size: 13px;
+    display: block;
+}
+ 
+ 
+  

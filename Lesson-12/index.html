@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asses/fonts/icomoon/style.css">
+
+    <script src="https://kit.fontawesome.com/842c273863.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="form_wrap">
+
+
+    <form action="#" method="post">
+        <div class="container">
+        <h2>Create an Account</h2>
+
+
+        <div class="flex_wrap">
+          <div class="form_row">
+            <label for="name" class="label">First name</label>
+            <div class="form-input">
+              <input type="text" name="name" id="name">
+            </div>
+          </div>
+
+
+            <div class="form_row">
+              <label for="last_name" class="label">Last name</label>
+              <div class="form-input">
+                <input type="text" name="last_name" id="last_name">
+              </div>
+            </div>
+
+            
+          </div>
+
+          
+          <div class="form_row">
+            <label for="form-email" class="label">Email</label>
+            <div class="form-input">
+              <input type="email" name="email" id="form-email">
+            </div>
+            <span class="subtitle">We'll never share your email with anyone else.</span>
+          </div>
+
+
+          <div class="genders">
+            <input type="radio" name="gender" id="male" value="male" checked class="box">
+            <span class="check-style"></span>
+            <label for="male" class="margin_male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" class="box">
+            <span class="check-style"></span>
+            <label for="female" class="margin_female">Female</label>
+          </div> 
+
+
+          <div class="flex_wrap">
+            <div class="form_row">
+              <label for="select_country" class="label">Country</label>
+                <select name="country" id="select_country">
+                  <option disabled="disabled" selected="selected">Select</option>
+                  <option value="UA">Ukraine</option>
+                  <option value="PL">Poland</option>
+                  <option value="TK">Turkey</option>
+                  <option value="GR">Germany</option>
+                  <option value="FR">France</option>
+                </select>
+            </div>
+  
+  
+              <div class="form_row">
+                <label for="city-choice" class="label">City</label>
+                <div class="form-input">
+                  <input type="text" name="city" id="city-choice">
+                </div>
+              </div>
+              
+            </div>
+            <button class="btn btn-large" type="submit"><a href="#">Sign Up</a></button>
+
+            <div class="links_text">
+                <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#" class="links">Terms of Use</a>  and  <a href="#" class="links">Privacy Policy</a></p>
+            </div>
+
+            <div class="account_link">
+                <a href="#" class="link1">Have an account?</a>
+                <a href="#" class="links">Log In</a>
+            </div>
+        </div>
+
+
+
+        <form action="#" method="post">
+            <div class="container">
+            <h2>Profile</h2>
+                <div class="user_box">
+                    <img src="img/user.png" alt="user" class="user_photo">
+                    <div class="input_container">
+                        <input type="file" id="file" ><i class="fa-solid fa-camera"></i>
+                        <span class="delete"><i class="fa-solid fa-trash"></i></span>
+                        <span class="span_details">Up to 1 MB (300x300 px)</span>
+                      </div>
+                </div>
+
+
+                <div class="flex_wrap">
+                    <div class="form_row">
+                      <label for="name2" class="label">Name</label>
+                      <div class="form-input">
+                        <input type="text" name="name" id="name2">
+                      </div>
+                    </div>
+          
+          
+                      <div class="form_row">
+                        <label for="email2" class="label">Email</label>
+                        <div class="form-input">
+                          <input type="email" name="email2" id="email2">
+                        </div>
+                      </div>
+
+                      
+            </div>
+
+            <div class="flex_wrap">
+                <div class="form_row">
+                  <label for="select_country" class="label">Country</label>
+                    <select name="country" id="select_country">
+                      <option disabled="disabled" selected="selected">Select</option>
+                      <option value="UA">Ukraine</option>
+                      <option value="PL">Poland</option>
+                      <option value="TK">Turkey</option>
+                      <option value="GR">Germany</option>
+                      <option value="FR">France</option>
+                    </select>
+                </div>
+      
+      
+                  <div class="form_row">
+                    <label for="city-choice" class="label">City</label>
+                    <div class="form-input">
+                      <input type="text" name="city" id="city-choice">
+                    </div>
+                  </div>
+                  
+                </div>
+
+                
+        <div class="flex_wrap">
+            <div class="form_row">
+              <label for="zip" class="label">Zip code</label>
+              <div class="form-input">
+                <input type="text" name="zip" id="zip">
+              </div>
+            </div>
+  
+  
+              <div class="form_row">
+                <label for="tel" class="label">Phone Number</label>
+                <div class="form-input">
+                  <input type="tel" name="tel" id="tel">
+                </div>
+              </div>
+  
+              
+            </div>
+            <button class="btn"><a href="#" type="submit">Update</a></button>
+
+              
+            
+
+    </div>
+
+    
+           
+        
+
+
+
+<!--         
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script src="plugin/formstyler/jquery.formstyler.min.js"></script>
+        <script>
+          (function($) {
+            $(function() {
+      
+                $('select').styler();
+      
+            });
+        })(jQuery);
+        </script> -->
+        
+</body>
+</html>
