@@ -1,0 +1,162 @@
+$base-size: 16;
+$main-color: #3DB370;
+
+@mixin fz($size_px) {
+  font-size: ($size_px / $base-size) * 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+img{
+  object-fit: cover
+}
+
+body {
+  @include fz(16);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+a, button {
+  cursor: pointer;
+  transition: all .2s ease;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+header{
+  padding: 22px 0 23px;
+  border-bottom:1px solid #EFEEF3;
+  margin-bottom: 100px;
+}
+.subtitle{
+  text-transform: uppercase;
+   color: #7690A8;
+   line-height: 21px;
+   margin-bottom: 15px;
+   display: block;
+}
+h1{
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  font-family: 'Nunito Sans';
+  color: #16133D;
+  margin-bottom: 40px;
+}
+h3{
+  font-size: 24px;
+  line-height: 21px;
+  color: #16133D;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+section{
+  margin-bottom: 100px;
+}
+footer{
+  padding: 40px 0;
+  background-color: #16133D;
+  min-height: 212px;
+}
+.cards-wrap{
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+
+  
+}
+
+
+
+.icon{
+  display: inline-block;
+  width: 33px;
+  fill: #007FFC;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards{
+  padding: 40px;
+  border: 1px solid #E5EAF4;
+  border-radius: 8px;
+  &:hover{
+    border-color: $main-color;
+    .icon{
+      fill: #3DB370;
+    }
+  }
+}
+
+
+.icons{
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 16px;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 30px;
+}
+
+
+.info_text{
+ max-width: 271px;
+ line-height: 28px;
+ margin-bottom: 30px;
+}
+.links{
+  color: #3DB370;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer_logo{
+  margin-bottom: 40px;
+}
+.social_links{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  :hover{
+    color: $main-color;
+
+  }
+
+}
+
+
+.link_item{
+  color: #000;
+  border-radius: 5px;
+  background-color: #EFEEF3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+
+}
+
+
+// svg:hover{
+//   fill:$main-color;
+// }
