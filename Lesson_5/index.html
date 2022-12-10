@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis Novik</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/response.css">
 </head>
 <body>
+    <button type="button" class="btn-humb">
+        <img src="assets/images/hamb.png" alt="">
+    </button>
+  
     <div class="container">
         <header id="header">
             
@@ -31,15 +37,33 @@
 
     <main>
         <section class="one_screen container">
+       
             
             <div class="top">
                 <div class="title">
                     <h1>Denis Novik</h1>
+                    <div class="title-info">
+                        <p class="title-text">UX | UI designer 24 years old, Minsk</p>
+                    </div>
+                    <div class="language">
+                        <ul>
+                         <a href="#"><li> ENG</li></a>
+                         
+                         <a href="#" class="ru"><li> RU</li></a>
+                        </ul>
+                         </div>
+
+                    </div>
+               
                 </div>
+             
             
 
             <div class="main_foto">
-                <img src="assets/images/first_screen.jpg" alt="Denis Novik">
+                <div class="promo_pic">
+                    <img src="assets/images/first_screen.jpg" class="promo_dt" alt="Denis Novik">
+                    <img src="assets/images/full_photo.jpg" class="promo_mb" alt="">
+                 </div>
             </div>
         </div>
         </section>
@@ -70,7 +94,9 @@
             <div class="skill_container">
 
                 <div class="skills_item">
+                    <div class="program_item_pic">
                     <img src="assets/images/photoshop.png" alt="photoshop" class="skills_img" >
+                  </div>
                     <p>Adobe <br> Photoshop</p>
 
                     <div class="rating_stars">
@@ -85,7 +111,9 @@
                 </div>
 
                 <div class="skills_item">
+                    <div class="program_item_pic">
                     <img src="assets/images/Ai.png" alt="ai" class="skills_img">
+                    </div>
                     <p>Adobe <br> Illustrator</p>
 
                     <div class="rating_stars">
@@ -100,7 +128,9 @@
                 </div>
 
                 <div class="skills_item">
+                    <div class="program_item_pic">
                     <img src="assets/images/Ae.png" alt="ae" class="skills_img">
+                    </div>
                     <p>Adobe <br> After Effects</p>
     
                     <div class="rating_stars">
@@ -112,8 +142,10 @@
                     </div>
                 </div>
 
-                <div class="skills_item" >
+                <div class="skills_item last" >
+                    <div class="program_item_pic">
                     <img src="assets/images/Figma.jpg" alt="figma" class="skills_img">
+                    </div>
                     <p>Figma</p>
     
                     <div class="rating_stars figma_stars">
@@ -146,17 +178,17 @@
             
             <div class="portfolio_img">
                 <div class="first_img">
-                    <img src="assets/images/portfolio_1.jpg" alt="portfolio_image">
+                    <img src="assets/images/portfolio_1.jpg" alt="portfolio_image" class="img_width">
                     <a href="#" target="_blank" class="portfolio_link">Online fashion store - <br> Homepage</a>
                 </div>
 
                 <div class="two_img">
-                    <img src="assets/images/portfolio_2.jpg" alt="Portfolio_image">
+                    <img src="assets/images/portfolio_2.jpg" alt="Portfolio_image"  class="img_width">
                     <a href="#" class="portfolio_link">Reebok Store - Concept</a>
                 </div>
 
                 <div class="three_img">
-                    <img src="assets/images/portfolio_3.jpg" alt="Portfolio_image">
+                    <img src="assets/images/portfolio_3.jpg" alt="Portfolio_image"  class="img_width">
                     <a href="#" class="portfolio_link">Braun Landing Page - Concept</a>
                 </div>
             </div>
@@ -169,20 +201,23 @@
     </main>
 
     <footer id="footer" class="contacts">
+        <div class="container">
         <div class="contacts_container">
             <div class="contacts_top">
                 <h2 class="h2">Contacts</h2>
                 <p class="contact_tex">Want to know more or just chat? <br>
                     You are welcome!</p>
-                    <button type="submit">Send message</button>
+                    <div class="btn_wrap">
+                     <button type="submit" class="btn">Send message</button>
+                    </div>
             </div>
             <div class="contacts_social">
                 <div class="section_social">
-                    <ul>
-                        <li> <a href="#"><img src="assets/images/linkedin.svg" alt="linkedin"></a></li>
-                        <li><a href="#"><img src="assets/images/instagram.svg" alt="photoshop"></a></li>
-                        <li><a href="#"><img src="assets/images/behance.svg" alt="behance"></a> </li>
-                        <li> <a href="#"><img src="assets/images/dribbble.svg" alt="dribble"></a> </li>
+                    <ul class="soc_list">
+                        <li class="soc_item"> <a href="#"><img src="assets/images/linkedin.svg" alt="linkedin"></a></li>
+                        <li class="soc_item"><a href="#"><img src="assets/images/instagram.svg" alt="photoshop"></a></li>
+                        <li class="soc_item"><a href="#"><img src="assets/images/behance.svg" alt="behance"></a> </li>
+                        <li class="soc_item"> <a href="#"><img src="assets/images/dribbble.svg" alt="dribble"></a> </li>
                     </ul>
                    
                     
@@ -195,10 +230,11 @@
 
         </div>
 
-
+        
+    </div>
     </footer>
 
     
-    
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
 </body>
 </html>
